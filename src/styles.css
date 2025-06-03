@@ -28,7 +28,6 @@ header {
   padding: 20px;
   width: 75%;
   border-radius: 6px;
-  font-family: "Monserrat", sans-serif;
 }
 
 .search-button {
@@ -41,7 +40,6 @@ header {
   line-height: 1;
   border-radius: 10px;
   text-align: center;
-  font-family: "Monserrat", sans-serif;
 }
 
 main {
@@ -62,14 +60,12 @@ main {
   font-weight: 900;
   margin: 0;
   color: #283618;
-  font-family: "Monserrat", sans-serif;
 }
 .details {
   color: #c48e52;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  font-family: "Monserrat", sans-serif;
 }
 
 .details strong {
@@ -100,6 +96,6 @@ footer {
   text-align: center;
   padding-top: 15px;
   color: #c48e52;
-  font-family: "Monserrat", sans-serif;
+
   font-size: small;
 }
