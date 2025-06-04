@@ -15,7 +15,8 @@ function displayWeather(response) {
   let temperatureElement = document.querySelector(".current-temperature-value");
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = temperature;
-
   let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = response.data.city;
 }
+let form = document.querySelector("form");
+form.addEventListener("submit", search);
