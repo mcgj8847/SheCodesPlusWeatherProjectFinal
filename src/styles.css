@@ -68,13 +68,17 @@ main {
   line-height: 24px;
 }
 
-.details strong {
+.humidity-value {
   color: #bc6c25;
+  font-weight: bold;
 }
-
+.wind-value {
+  color: #bc6c25;
+  font-weight: bold;
+}
 .current-temperature-icon {
   position: relative;
-  top: -8px;
+  top: 10px;
   font-size: 60px;
   margin-right: 10px;
 }

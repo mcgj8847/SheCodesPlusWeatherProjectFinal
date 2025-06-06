@@ -19,6 +19,12 @@ function displayWeather(response) {
   cityElement.innerHTML = response.data.city;
   let descriptionElement = document.querySelector("#weather-descripcion");
   descriptionElement.innerHTML = response.data.condition.description;
+  let humidityElement = document.querySelector("#humidity-value");
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  let windElement = document.querySelector("#wind-value");
+  windElement.innerHTML = `${response.data.wind.speed} km/h`;
+  let iconElement = document.querySelector("#current-temperature-icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}">`;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
