@@ -110,10 +110,14 @@ main {
   color: #bc6c25;
   font-weight: bold;
   line-height: 20px;
+  font-size: 14px;
 }
 .forecast-icon {
   text-align: center;
-  font-size: 30px;
+  width: 90%;
+  height: 90%;
+  display: block;
+  margin: 0 auto;
 }
 footer {
   border-top: 1px solid #f9f7fe;
