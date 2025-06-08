@@ -78,7 +78,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHtml = ``;
   response.data.daily.forEach(function (day, index) {
-    if (index < 6) {
+    if (index > 0 && index < 7) {
       forecastHtml += `<div class="weather-forecast-day" id="weather-forecast-day">
           <div id="forecast-day" class="forecast-day">${formatedDay(
             day.time
