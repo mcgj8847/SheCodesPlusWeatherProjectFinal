@@ -53,3 +53,19 @@ let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 let form = document.querySelector("form");
 form.addEventListener("submit", search);
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let fday = ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let forecastHtml = ``;
+  fday.forEach(function (day) {
+    forecastHtml += `<div class="weather-forecast-day" id="weather-forecast-day">
+          <div id="forecast-day" class="forecast-day">${day} </div>
+          <div id="forecast-icon" class="forecast-icon">⛅</div>
+          <div id="forecast-values" class="forecast-values">
+            <span id="forecast-min">7</span> °C <span id="forecast-max">20</span>°C
+          </div>
+        </div>`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+displayForecast();
